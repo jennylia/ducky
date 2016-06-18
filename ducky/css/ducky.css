@@ -37,7 +37,8 @@ h6 {
 }
 
 hr.heart-light,
-hr.heart-primary {
+hr.heart-primary,
+hr.book{
     margin: 25px auto 30px;
     padding: 0;
     border: 0;
@@ -74,12 +75,8 @@ hr.heart-primary:after {
     background-color: #fff;
 }
 
-hr.book{
-    margin: 25px auto 30px;
-    padding: 0;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
+hr.book:after{
+    background-color: #ffffff;
     content: "\f02d";
     display: inline-block;
     position: relative;
