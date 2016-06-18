@@ -40,7 +40,6 @@ hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
-    max-width: 250px;
     border: 0;
     border-top: solid 5px;
     text-align: center;
@@ -48,7 +47,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f004";
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -58,12 +57,12 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: pink;
 }
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: pink;
 }
 
 hr.star-primary {
@@ -102,11 +101,18 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    color: #3a2acc;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+    color: #3a2acc;
+}
+header .intro-text .skill-item {
+    font-size: 1em;
+    font-weight: 300;
+    color: #3a2acc;
 }
 
 @media(min-width:768px) {
@@ -457,4 +463,8 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#ul-plain {
+    list-style-type: none;
 }
