@@ -29,7 +29,53 @@
     <![endif]-->
 
 </head>
+<script>
+function onLesson1Success()
+{
+	alert("Great, now connect duck to the pond on the circuit board !");
+	var max_no_of_attempts=10;
+	var isFileFound = UrlExists( "shield_output_lesson1.json");	
+	alert("Great !");
 
+	while( max_no_of_attempts!=0 )
+	{
+		max_no_of_attempts-=1;
+		alert(max_no_of_attempts);
+		if(isFileFound == true )
+		{
+		var isSetupValid = checkSetupLesson1();
+		if( isSetupValid != true)
+			{
+			alert("Incorrect placement of LEDs. Try again!");			
+		
+			}		
+		else{
+			alert(" Well Done !");
+			window.location("index.html#lesson2");		
+		
+			}
+		
+		}
+			
+	}
+}
+function checkSetupLesson1(){
+	return true;
+}
+function UrlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+	alert(http.status);
+	if (http.status==404) return false
+	else
+		return true;
+//    return http.status!=404;
+}
+
+
+</script>
 <body id="page-top" class="index">
 
 <!-- Navigation -->
@@ -102,85 +148,49 @@
             <div class="col-lg-12 text-center">
                 <h2>Lesson 1</h2>
                 <hr class="book">
+		<h3> Ducky has to cross one of two ponds below. Which one would you make ducky choose ? </h3>
+		</br> </br>
+		<div class="img123">
+		<div class="imgContainer">
+		<a href="dead.html">
+		<img src="img/alligator.png" class="img-responsive" alt="alligator">
+		<p>Alligator</p>
+		</a>
+		</div>
+		<div class="imgContainer">
+		<a href="onLesson1Success()">
+		<img src="img/lily-pad-pond.png" class="img-responsive" alt="lily-pond" onclick="onLesson1Success()" >
+		<p>Lily Pond</p>
+		</img>
+		</a>
             </div>
         </div>
     </div>
-
 </section>
-<!-- Portfolio Grid Section -->
-<section id="portfolio">
+<!-- Lesson 2 -->
+<section id="lesson2">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2>Portfolio</h2>
-                <hr class="star-primary">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                </a>
-            </div>
-            <div class="col-sm-4 portfolio-item">
-                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                </a>
+                <h2>Lesson 2</h2>
+                <hr class="book">
             </div>
         </div>
     </div>
 </section>
 
+<!-- Lesson 3 -->
+<section id="lesson3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Lesson 3</h2>
+                <hr class="book">
+            </div>
+        </div>
+    </div>
+
+</section>
 <!-- About Section -->
 <section class="success" id="about">
     <div class="container">
