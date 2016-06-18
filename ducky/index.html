@@ -30,50 +30,14 @@
 
 </head>
 <script>
-function onLesson1Success()
+function onLessonSuccess()
 {
-	alert("Great, now connect duck to the pond on the circuit board !");
-	var max_no_of_attempts=10;
-	var isFileFound = UrlExists( "shield_output_lesson1.json");	
-	alert("Great !");
+    //Generic Helper with Lessons
+	alert("Please make your hardware circuitry...");
+    alert("Analyzing");
+    alert("Success moving on to the next lesson");
 
-	while( max_no_of_attempts!=0 )
-	{
-		max_no_of_attempts-=1;
-		alert(max_no_of_attempts);
-		if(isFileFound == true )
-		{
-		var isSetupValid = checkSetupLesson1();
-		if( isSetupValid != true)
-			{
-			alert("Incorrect placement of LEDs. Try again!");			
-		
-			}		
-		else{
-			alert(" Well Done !");
-			window.location("index.html#lesson2");		
-		
-			}
-		
-		}
-			
-	}
 }
-function checkSetupLesson1(){
-	return true;
-}
-function UrlExists(url)
-{
-    var http = new XMLHttpRequest();
-    http.open('HEAD', url, false);
-    http.send();
-	alert(http.status);
-	if (http.status==404) return false
-	else
-		return true;
-//    return http.status!=404;
-}
-
 
 </script>
 <body id="page-top" class="index">
@@ -158,8 +122,8 @@ function UrlExists(url)
 		</a>
 		</div>
 		<div class="imgContainer">
-		<a href="onLesson1Success()">
-		<img src="img/lily-pad-pond.png" class="img-responsive" alt="lily-pond" onclick="onLesson1Success()" >
+
+		<img src="img/lily-pad-pond.png" class="img-responsive" alt="lily-pond" onclick="onLessonSuccess()" >
 		<p>Lily Pond</p>
 		</img>
 		</a>
