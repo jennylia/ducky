@@ -124,6 +124,8 @@ header .intro-text .skill-item {
     font-size: 1em;
     font-weight: 300;
     color: #3a2acc;
+    align-content: center;
+    margin-left: -30px;
 }
 
 @media(min-width:768px) {
