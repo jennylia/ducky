@@ -1,5 +1,10 @@
 
 <!DOCTYPE html>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -28,7 +33,7 @@
           <div class="inner cover">
             <h1 class="cover-heading">Sorry, Ducky died !</h1>            
             <p class="lead">
-              <a href="index.html" class="btn btn-lg btn-secondary">Go home and Try Again</a>
+              <a onclick="goBack()" class="btn btn-lg btn-secondary">Go home and Try Again</a>
             </p>
           </div> </div>
 
