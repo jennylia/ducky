@@ -1,2 +1,4 @@
+*./.DS_store/*
+ducky/img/.DS_Store
 .idea
 .idea/*

@@ -33,9 +33,9 @@
 <script>
     function onLessonSuccess() {
         //Generic Helper with Lessons
-        alert("Please make your hardware circuitry...");
-        alert("Analyzing");
-        alert("Success moving on to the next lesson");
+        console.log("Please make your hardware circuitry...");
+        console.log("Analyzing");
+        console.log("Success moving on to the next lesson");
 
     }
 
@@ -118,12 +118,12 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a href="dead.html">
-                            <img src="img/alligator.png" class="img-responsive" alt="alligator">
+                            <img src="img/alligator.png" alt="alligator">
                             <p>Alligator</p>
                         </a>
                     </div>
                     <div class="col-md-6">
-                        <img src="img/lily-pad-pond.png" class="img-responsive" alt="lily-pond"
+                        <img src="img/lily-pad-pond.png" alt="lily-pond"
                              onclick="onLessonSuccess()">
                         <p>Lily Pond</p>
                         </img>
@@ -140,6 +140,24 @@
                 <h2>Lesson 2</h2>
                 <hr class="book">
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <h4>Plane</h4>
+                <img id="plane" class="img-button " src="img/lesson2/plane.png" onclick="onLessonSuccess()">
+            </div>
+
+            <div class="col-md-4">
+                <h4>Train</h4>
+                <img class="img-button" src="img/lesson2/train.png" onclick="onLessonSuccess()">
+            </div>
+
+
+            <div class="col-md-4">
+                <h4>Bus</h4>
+                <img class="img-button" src="img/lesson2/bus.png" onclick="onLessonSuccess()">
+            </div>
+
         </div>
     </div>
 </section>

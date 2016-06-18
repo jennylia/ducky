@@ -483,3 +483,13 @@ footer .footer-below {
 #ul-plain {
     list-style-type: none;
 }
+
+.img-button{
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#plane {
+    padding-top: 45px;
+}
