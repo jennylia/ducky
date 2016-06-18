@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: X-Requested-With
+Content-Type: application/json
+Transfer-Encoding: chunked
+Content-Disposition: attachment;
+Date: Sun, 12 Jul 2016 18:49:27 GMT
+Cache-control: private
+19
+{"light1":"on"}
+0
+{"light2":"on"}
